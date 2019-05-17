@@ -1,0 +1,69 @@
+contents of memory
+addr value
+000: 24030005
+001: 00000821
+002: 24020001
+003: 00220821
+004: 24420001
+005: 00432023
+006: 1880fffc
+007: 00000000
+
+behavioral simulation of simple MIPS-like machine
+  (all values are shown in hexadecimal)
+
+pc   result of instruction at that location
+000: addiu - register r[3] now contains 0x00000005
+001: addu  - register r[1] now contains 0x00000000
+002: addiu - register r[2] now contains 0x00000001
+003: addu  - register r[1] now contains 0x00000001
+004: addiu - register r[2] now contains 0x00000002
+005: subu  - register r[4] now contains 0xfffffffd
+006: blez  - branch taken to 0x00000003
+003: addu  - register r[1] now contains 0x00000003
+004: addiu - register r[2] now contains 0x00000003
+005: subu  - register r[4] now contains 0xfffffffe
+006: blez  - branch taken to 0x00000003
+003: addu  - register r[1] now contains 0x00000006
+004: addiu - register r[2] now contains 0x00000004
+005: subu  - register r[4] now contains 0xffffffff
+006: blez  - branch taken to 0x00000003
+003: addu  - register r[1] now contains 0x0000000a
+004: addiu - register r[2] now contains 0x00000005
+005: subu  - register r[4] now contains 0x00000000
+006: blez  - branch taken to 0x00000003
+003: addu  - register r[1] now contains 0x0000000f
+004: addiu - register r[2] now contains 0x00000006
+005: subu  - register r[4] now contains 0x00000001
+006: blez  - branch untaken
+007: hlt
+
+contents of memory
+addr value
+000: 24030005
+001: 00000821
+002: 24020001
+003: 00220821
+004: 24420001
+005: 00432023
+006: 1880fffc
+007: 00000000
+
+instruction class counts (omits hlt instruction)
+  alu ops            18
+  loads/stores        0
+  jumps/branches      5
+total                23
+
+memory access counts (omits hlt instruction)
+  inst. fetches      23
+  loads               0
+  stores              0
+total                23
+
+transfer of control counts
+  jumps               0
+  jump-and-links      0
+  taken branches      4
+  untaken branches    1
+total                 5

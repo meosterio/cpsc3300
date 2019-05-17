@@ -1,0 +1,130 @@
+contents of memory
+addr value
+000: 240a0040
+001: 00210826
+002: 00421026
+003: 00631826
+004: 01294826
+005: 00012180
+006: 00832021
+007: 24841000
+008: 8c870000
+009: 00032980
+00a: 00a22821
+00b: 24a52000
+00c: 8ca80000
+00d: 70e85802
+00e: 012b4821
+00f: 24630001
+010: 146afff4
+011: 00013180
+012: 00c23021
+013: 24c63000
+014: acc90000
+015: 24420001
+016: 144affec
+017: 24210001
+018: 142affe9
+019: 00000000
+
+behavioral simulation of simple MIPS-like machine
+  (all values are shown in hexadecimal)
+
+instruction class counts (omits hlt instruction)
+  alu ops          2384002
+  loads/stores      528384
+  jumps/branches    266304
+total              3178690
+
+memory access counts (omits hlt instruction)
+  inst. fetches    3178690
+  loads             524288
+  stores              4096
+total              3707074
+
+transfer of control counts
+  jumps                  0
+  jump-and-links         0
+  taken branches    262143
+  untaken branches    4161
+total               266304
+
+data cache counts
+  hits              257264
+  misses            271120
+  write backs         4088
+
+
+
+
+
+
+
+
+
+
+  contents of memory
+  addr value
+  000: 240a0040
+  001: 00210826
+  002: 00421026
+  003: 00013180
+  004: 00c23021
+  005: 24c63000
+  006: acc00000
+  007: 24420001
+  008: 144afffa
+  009: 24210001
+  00a: 142afff7
+  00b: 00210826
+  00c: 00631826
+  00d: 00012180
+  00e: 00832021
+  00f: 24841000
+  010: 8c870000
+  011: 00421026
+  012: 00032980
+  013: 00a22821
+  014: 24a52000
+  015: 8ca80000
+  016: 70e85802
+  017: 00013180
+  018: 00c23021
+  019: 24c63000
+  01a: 8cc90000
+  01b: 012b4821
+  01c: acc90000
+  01d: 24420001
+  01e: 144afff3
+  01f: 24630001
+  020: 146affec
+  021: 24210001
+  022: 142affe9
+  023: 00000000
+
+  behavioral simulation of simple MIPS-like machine
+    (all values are shown in hexadecimal)
+
+  instruction class counts (omits hlt instruction)
+    alu ops          2396419
+    loads/stores      794624
+    jumps/branches    270464
+  total              3461507
+
+  memory access counts (omits hlt instruction)
+    inst. fetches    3461507
+    loads             528384
+    stores            266240
+  total              4256131
+
+  transfer of control counts
+    jumps                  0
+    jump-and-links         0
+    taken branches    266238
+    untaken branches    4226
+  total               270464
+
+  data cache counts
+    hits              760415
+    misses             34209
+    write backs         1016
