@@ -63,11 +63,9 @@
  */
 
 
-/****	Alex Moore
-			alex9@clemson.edu
-			compiled with g++
-
-			*/
+/****
+	compiled with g++
+*/
 
 #include <iostream>
 #include <iomanip>
