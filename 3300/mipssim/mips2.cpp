@@ -38,11 +38,9 @@ considered for issue slot 2 is instead placed in a new instance of issue slot 1.
 The instruction following it is then considered for issue slot 2.
 */
 
-/****	Alex Moore
-			alex9@clemson.edu
-			compiled with g++
-
-			*/
+/****
+	compiled with g++
+*/
 
 #include <iostream>
 #include <iomanip>
